@@ -18,3 +18,33 @@ body {
 #colorDescription {
    margin-top: .7%;
 }
+#red {
+    background-color: red;
+}
+#blue {
+    background-color: blue;
+}
+#green {
+    background-color: green;
+}
+#orange {
+    background-color: orange;
+}
+#yellow {
+    background-color: yellow;
+}
+#black {
+    background-color: black;
+}
+#pink {
+    background-color: pink;
+}
+#white {
+    background-color: white;
+}
+#purple {
+    background-color: purple;
+}
+#currentColor {
+    background-color: white;
+}
