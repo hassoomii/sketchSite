@@ -12,6 +12,7 @@ const gridContainer = document.getElementById('gridContainer');
 let colorChoice = 'white';
 let i = 0;
 let ins = 0;
+let mouseDown = false;
 
 function checkColorButtonInput(buttonId, colorInQuotations){
     buttonId.addEventListener('click', () => {
@@ -30,6 +31,17 @@ function renderContainerContainer(){
         colorContainer.classList.add('colorContainer');
         containerContainer.appendChild(colorContainer);
         ins ++;
+        colorContainer.addEventListener('mouseover', () => {
+            colorContainer.addEventListener('mousedown', () => {
+                mouseDown = true;
+            });
+            colorContainer.addEventListener('mouseup', () => {
+                mouseDown = false;
+            });
+            if (mouseDown === true){
+                colorContainer.style.backgroundColor = colorChoice;
+            };
+        });
     }
 };
 
