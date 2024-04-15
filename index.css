@@ -1,0 +1,20 @@
+.header, .headingMessage, .colorMessage, .colorDiv {
+    text-align: center;
+}
+body {
+    background-color: rgb(95, 163, 209);
+}
+#red, #blue, #green, #orange, #yellow, #black, #pink, #white, #purple, #currentColor {
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    margin: .7%;
+}
+.colorDiv {
+    display: flex;
+    justify-content: center;
+}
+#colorDescription {
+   margin-top: .7%;
+}
