@@ -8,13 +8,29 @@ const blackButton = document.getElementById('black');
 const pinkButton = document.getElementById('pink');
 const whiteButton = document.getElementById('white');
 const currentButton = document.getElementById('currentColor');
+const gridContainer = document.getElementById('gridContainer');
 let colorChoice = 'white';
+let i = 0;
+let ins = 0;
 
 function checkColorButtonInput(buttonId, colorInQuotations){
     buttonId.addEventListener('click', () => {
         currentButton.style.backgroundColor = colorInQuotations;
         colorChoice = colorInQuotations;
     });
+};
+
+function renderContainerContainer(){
+    const containerContainer = document.createElement('div');
+    containerContainer.classList.add('containerContainer');
+    gridContainer.appendChild(containerContainer);
+    ins = 0;
+    while (ins < 40){
+        const colorContainer = document.createElement('div');
+        colorContainer.classList.add('colorContainer');
+        containerContainer.appendChild(colorContainer);
+        ins ++;
+    }
 };
 
 checkColorButtonInput(redButton, 'red');
@@ -26,3 +42,8 @@ checkColorButtonInput(orangeButton, 'orange');
 checkColorButtonInput(blackButton, 'black');
 checkColorButtonInput(pinkButton, 'pink');
 checkColorButtonInput(whiteButton, 'white');
+
+while (i < 40 ){
+    renderContainerContainer();
+    i ++;
+};

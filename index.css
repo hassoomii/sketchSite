@@ -1,5 +1,9 @@
-.header, .headingMessage, .colorMessage, .colorDiv {
+.header, .headingMessage, .colorMessage, .colorDiv, #gridContainer, .colorContainer, .containerContainer {
     text-align: center;
+    justify-content: center;
+}
+#gridContainer {
+    margin-top: 5%;
 }
 body {
     background-color: rgb(95, 163, 209);
@@ -47,4 +51,16 @@ body {
 }
 #currentColor {
     background-color: white;
+}
+.colorContainer {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border: .5px solid black;
+}
+.containerContainer {
+    display: flex;
+}
+#gridContainer {
+    display: grid;
 }
