@@ -14,7 +14,7 @@ let colorChoice = 'white';
 let i = 0;
 let ins = 0;
 let mouseDown = false;
-let gridSize = 48;
+let gridSize = 100;
 
 function checkColorButtonInput(buttonId, colorInQuotations){
     buttonId.addEventListener('click', () => {
